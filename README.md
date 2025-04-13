@@ -18,7 +18,7 @@ $ poetry env use /PATH/flask_docker_ngrok_practice/venv/bin/python3
 $ poetry shell 
 $ poetry add xxx # Package name e.g. poetry add flask
 $ poetry lock  # Lock file sync with toml
-$ poetry export --without-hashes --without-urls | awk '{ print $1 }' FS=';' > requirements.txt # Optional if need export requirements.txt
+$ pip freeze > requirements.txt
 ```
 
 - When clone the repo from others
